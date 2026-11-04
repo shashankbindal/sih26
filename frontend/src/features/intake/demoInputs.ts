@@ -1,0 +1,53 @@
+// Copied from backend/app/seed/data/demo_inputs.json (no API exposes it). Scenario A and E payloads for the DEMO_MODE menu.
+import type { CaseCreate } from './shared';
+
+export interface DemoInput {
+  key: string;
+  label: string;
+  payload: CaseCreate;
+}
+
+export const DEMO_INPUTS: DemoInput[] = [
+  {
+    "key": "A",
+    "label": "Scenario A · Hindi CSS complaint, no Permanent ID (Shrinath)",
+    "payload": {
+      "source_channel": "CSS",
+      "source_ref": "CSS-2026-88123",
+      "institution_text_raw": "श्रीनाथ इंजीनियरिंग कॉलेज कानपुर",
+      "permanent_id_raw": null,
+      "complainant": {
+        "name": "Demo Complainant",
+        "email": "demo.student@mailbox.example",
+        "phone": "9000000001",
+        "party_type": "STUDENT"
+      },
+      "category": null,
+      "subject": "फीस वापस नहीं कर रहे",
+      "description": "Maine 2 Oct ko admission withdraw kiya, ₹85,000 fees abhi tak wapas nahi mili. College bolta hai 4 saal ki fees do tab certificate milega.",
+      "owner_bureau": "PGRC",
+      "owner_ro_code": null
+    }
+  },
+  {
+    "key": "E",
+    "label": "Scenario E · near-twin trap (Shri Ram, Lucknow)",
+    "payload": {
+      "source_channel": "CSS",
+      "source_ref": "CSS-2026-88124",
+      "institution_text_raw": "Shri Ram Engg College Lucknow",
+      "permanent_id_raw": null,
+      "complainant": {
+        "name": "Demo Complainant Two",
+        "email": "demo.parent@mailbox.example",
+        "phone": "9000000002",
+        "party_type": "PARENT"
+      },
+      "category": null,
+      "subject": "Original certificates not returned",
+      "description": "The college is not returning my son's original certificates after he left the B.Tech course in the second semester.",
+      "owner_bureau": "PGRC",
+      "owner_ro_code": null
+    }
+  }
+];
