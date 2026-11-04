@@ -1,0 +1,1078 @@
+{
+  "regional_offices": [
+    {
+      "code": "KNP",
+      "name": "Northern Regional Office, Kanpur",
+      "city": "Kanpur",
+      "lat": 26.4499,
+      "lng": 80.3319,
+      "states": [
+        "Uttar Pradesh",
+        "Rajasthan"
+      ]
+    },
+    {
+      "code": "CHD",
+      "name": "North-Western Regional Office, Chandigarh",
+      "city": "Chandigarh",
+      "lat": 30.7333,
+      "lng": 76.7794,
+      "states": [
+        "Chandigarh",
+        "Punjab",
+        "Uttarakhand",
+        "Haryana",
+        "Himachal Pradesh",
+        "Jammu and Kashmir",
+        "Delhi",
+        "Ladakh"
+      ]
+    },
+    {
+      "code": "MUM",
+      "name": "Western Regional Office, Mumbai",
+      "city": "Mumbai",
+      "lat": 19.076,
+      "lng": 72.8777,
+      "states": [
+        "Maharashtra",
+        "Gujarat",
+        "Goa",
+        "Dadra and Nagar Haveli and Daman and Diu"
+      ]
+    },
+    {
+      "code": "BPL",
+      "name": "Central Regional Office, Bhopal",
+      "city": "Bhopal",
+      "lat": 23.2599,
+      "lng": 77.4126,
+      "states": [
+        "Madhya Pradesh",
+        "Chhattisgarh"
+      ]
+    },
+    {
+      "code": "KOL",
+      "name": "Eastern Regional Office, Kolkata",
+      "city": "Kolkata",
+      "lat": 22.5726,
+      "lng": 88.3639,
+      "states": [
+        "West Bengal",
+        "Bihar",
+        "Jharkhand",
+        "Odisha",
+        "Sikkim",
+        "Andaman and Nicobar Islands"
+      ]
+    },
+    {
+      "code": "GHY",
+      "name": "North-Eastern Regional Office, Guwahati",
+      "city": "Guwahati",
+      "lat": 26.1445,
+      "lng": 91.7362,
+      "states": [
+        "Assam",
+        "Manipur",
+        "Meghalaya",
+        "Arunachal Pradesh",
+        "Mizoram",
+        "Nagaland",
+        "Tripura"
+      ]
+    },
+    {
+      "code": "BLR",
+      "name": "South-Western Regional Office, Bengaluru",
+      "city": "Bengaluru",
+      "lat": 12.9716,
+      "lng": 77.5946,
+      "states": [
+        "Karnataka"
+      ]
+    },
+    {
+      "code": "HYD",
+      "name": "South-Central Regional Office, Hyderabad",
+      "city": "Hyderabad",
+      "lat": 17.385,
+      "lng": 78.4867,
+      "states": [
+        "Telangana",
+        "Andhra Pradesh"
+      ]
+    },
+    {
+      "code": "CHN",
+      "name": "Southern Regional Office, Chennai",
+      "city": "Chennai",
+      "lat": 13.0827,
+      "lng": 80.2707,
+      "states": [
+        "Tamil Nadu",
+        "Puducherry"
+      ]
+    },
+    {
+      "code": "TVM",
+      "name": "Kerala Regional Office, Thiruvananthapuram",
+      "city": "Thiruvananthapuram",
+      "lat": 8.5241,
+      "lng": 76.9366,
+      "states": [
+        "Kerala",
+        "Lakshadweep"
+      ]
+    }
+  ],
+  "districts": [
+    {
+      "district": "Kanpur Nagar",
+      "state": "Uttar Pradesh",
+      "ro_code": "KNP",
+      "city": "Kanpur",
+      "pincodes": [
+        "208001",
+        "208017",
+        "208024"
+      ]
+    },
+    {
+      "district": "Lucknow",
+      "state": "Uttar Pradesh",
+      "ro_code": "KNP",
+      "city": "Lucknow",
+      "pincodes": [
+        "226001",
+        "226010",
+        "226021"
+      ]
+    },
+    {
+      "district": "Varanasi",
+      "state": "Uttar Pradesh",
+      "ro_code": "KNP",
+      "city": "Varanasi",
+      "pincodes": [
+        "221001",
+        "221005",
+        "221010"
+      ]
+    },
+    {
+      "district": "Prayagraj",
+      "state": "Uttar Pradesh",
+      "ro_code": "KNP",
+      "city": "Prayagraj",
+      "pincodes": [
+        "211001",
+        "211004",
+        "211013"
+      ]
+    },
+    {
+      "district": "Agra",
+      "state": "Uttar Pradesh",
+      "ro_code": "KNP",
+      "city": "Agra",
+      "pincodes": [
+        "282001",
+        "282005",
+        "282010"
+      ]
+    },
+    {
+      "district": "Gautam Buddha Nagar",
+      "state": "Uttar Pradesh",
+      "ro_code": "KNP",
+      "city": "Greater Noida",
+      "pincodes": [
+        "201301",
+        "201306",
+        "201310"
+      ]
+    },
+    {
+      "district": "Ghaziabad",
+      "state": "Uttar Pradesh",
+      "ro_code": "KNP",
+      "city": "Ghaziabad",
+      "pincodes": [
+        "201001",
+        "201002",
+        "201009"
+      ]
+    },
+    {
+      "district": "Meerut",
+      "state": "Uttar Pradesh",
+      "ro_code": "KNP",
+      "city": "Meerut",
+      "pincodes": [
+        "250001",
+        "250002",
+        "250004"
+      ]
+    },
+    {
+      "district": "Bareilly",
+      "state": "Uttar Pradesh",
+      "ro_code": "KNP",
+      "city": "Bareilly",
+      "pincodes": [
+        "243001",
+        "243122",
+        "243005"
+      ]
+    },
+    {
+      "district": "Gorakhpur",
+      "state": "Uttar Pradesh",
+      "ro_code": "KNP",
+      "city": "Gorakhpur",
+      "pincodes": [
+        "273001",
+        "273010",
+        "273015"
+      ]
+    },
+    {
+      "district": "Jhansi",
+      "state": "Uttar Pradesh",
+      "ro_code": "KNP",
+      "city": "Jhansi",
+      "pincodes": [
+        "284001",
+        "284002",
+        "284003"
+      ]
+    },
+    {
+      "district": "Jaipur",
+      "state": "Rajasthan",
+      "ro_code": "KNP",
+      "city": "Jaipur",
+      "pincodes": [
+        "302001",
+        "302017",
+        "302020"
+      ]
+    },
+    {
+      "district": "Jodhpur",
+      "state": "Rajasthan",
+      "ro_code": "KNP",
+      "city": "Jodhpur",
+      "pincodes": [
+        "342001",
+        "342003",
+        "342011"
+      ]
+    },
+    {
+      "district": "Kota",
+      "state": "Rajasthan",
+      "ro_code": "KNP",
+      "city": "Kota",
+      "pincodes": [
+        "324001",
+        "324005",
+        "324007"
+      ]
+    },
+    {
+      "district": "Chandigarh",
+      "state": "Chandigarh",
+      "ro_code": "CHD",
+      "city": "Chandigarh",
+      "pincodes": [
+        "160017",
+        "160022",
+        "160036"
+      ]
+    },
+    {
+      "district": "Sahibzada Ajit Singh Nagar",
+      "state": "Punjab",
+      "ro_code": "CHD",
+      "city": "Mohali",
+      "pincodes": [
+        "140301",
+        "160055",
+        "160062"
+      ]
+    },
+    {
+      "district": "Ludhiana",
+      "state": "Punjab",
+      "ro_code": "CHD",
+      "city": "Ludhiana",
+      "pincodes": [
+        "141001",
+        "141002",
+        "141008"
+      ]
+    },
+    {
+      "district": "Amritsar",
+      "state": "Punjab",
+      "ro_code": "CHD",
+      "city": "Amritsar",
+      "pincodes": [
+        "143001",
+        "143006",
+        "143105"
+      ]
+    },
+    {
+      "district": "Dehradun",
+      "state": "Uttarakhand",
+      "ro_code": "CHD",
+      "city": "Dehradun",
+      "pincodes": [
+        "248001",
+        "248007",
+        "248009"
+      ]
+    },
+    {
+      "district": "Haridwar",
+      "state": "Uttarakhand",
+      "ro_code": "CHD",
+      "city": "Haridwar",
+      "pincodes": [
+        "249401",
+        "249403",
+        "249407"
+      ]
+    },
+    {
+      "district": "Gurugram",
+      "state": "Haryana",
+      "ro_code": "CHD",
+      "city": "Gurugram",
+      "pincodes": [
+        "122001",
+        "122002",
+        "122018"
+      ]
+    },
+    {
+      "district": "Shimla",
+      "state": "Himachal Pradesh",
+      "ro_code": "CHD",
+      "city": "Shimla",
+      "pincodes": [
+        "171001",
+        "171002",
+        "171005"
+      ]
+    },
+    {
+      "district": "Jammu",
+      "state": "Jammu and Kashmir",
+      "ro_code": "CHD",
+      "city": "Jammu",
+      "pincodes": [
+        "180001",
+        "180004",
+        "180012"
+      ]
+    },
+    {
+      "district": "New Delhi",
+      "state": "Delhi",
+      "ro_code": "CHD",
+      "city": "New Delhi",
+      "pincodes": [
+        "110001",
+        "110016",
+        "110075"
+      ]
+    },
+    {
+      "district": "Mumbai Suburban",
+      "state": "Maharashtra",
+      "ro_code": "MUM",
+      "city": "Mumbai",
+      "pincodes": [
+        "400050",
+        "400070",
+        "400093"
+      ]
+    },
+    {
+      "district": "Thane",
+      "state": "Maharashtra",
+      "ro_code": "MUM",
+      "city": "Thane",
+      "pincodes": [
+        "400601",
+        "400602",
+        "400615"
+      ]
+    },
+    {
+      "district": "Pune",
+      "state": "Maharashtra",
+      "ro_code": "MUM",
+      "city": "Pune",
+      "pincodes": [
+        "411001",
+        "411028",
+        "411038"
+      ]
+    },
+    {
+      "district": "Nagpur",
+      "state": "Maharashtra",
+      "ro_code": "MUM",
+      "city": "Nagpur",
+      "pincodes": [
+        "440001",
+        "440010",
+        "440022"
+      ]
+    },
+    {
+      "district": "Nashik",
+      "state": "Maharashtra",
+      "ro_code": "MUM",
+      "city": "Nashik",
+      "pincodes": [
+        "422001",
+        "422005",
+        "422011"
+      ]
+    },
+    {
+      "district": "Kolhapur",
+      "state": "Maharashtra",
+      "ro_code": "MUM",
+      "city": "Kolhapur",
+      "pincodes": [
+        "416001",
+        "416004",
+        "416012"
+      ]
+    },
+    {
+      "district": "Ahmedabad",
+      "state": "Gujarat",
+      "ro_code": "MUM",
+      "city": "Ahmedabad",
+      "pincodes": [
+        "380001",
+        "380009",
+        "380015"
+      ]
+    },
+    {
+      "district": "Surat",
+      "state": "Gujarat",
+      "ro_code": "MUM",
+      "city": "Surat",
+      "pincodes": [
+        "395001",
+        "395007",
+        "395009"
+      ]
+    },
+    {
+      "district": "Vadodara",
+      "state": "Gujarat",
+      "ro_code": "MUM",
+      "city": "Vadodara",
+      "pincodes": [
+        "390001",
+        "390007",
+        "390020"
+      ]
+    },
+    {
+      "district": "Rajkot",
+      "state": "Gujarat",
+      "ro_code": "MUM",
+      "city": "Rajkot",
+      "pincodes": [
+        "360001",
+        "360005",
+        "360007"
+      ]
+    },
+    {
+      "district": "North Goa",
+      "state": "Goa",
+      "ro_code": "MUM",
+      "city": "Panaji",
+      "pincodes": [
+        "403001",
+        "403501",
+        "403507"
+      ]
+    },
+    {
+      "district": "Bhopal",
+      "state": "Madhya Pradesh",
+      "ro_code": "BPL",
+      "city": "Bhopal",
+      "pincodes": [
+        "462001",
+        "462003",
+        "462026"
+      ]
+    },
+    {
+      "district": "Indore",
+      "state": "Madhya Pradesh",
+      "ro_code": "BPL",
+      "city": "Indore",
+      "pincodes": [
+        "452001",
+        "452010",
+        "452016"
+      ]
+    },
+    {
+      "district": "Jabalpur",
+      "state": "Madhya Pradesh",
+      "ro_code": "BPL",
+      "city": "Jabalpur",
+      "pincodes": [
+        "482001",
+        "482002",
+        "482005"
+      ]
+    },
+    {
+      "district": "Gwalior",
+      "state": "Madhya Pradesh",
+      "ro_code": "BPL",
+      "city": "Gwalior",
+      "pincodes": [
+        "474001",
+        "474002",
+        "474011"
+      ]
+    },
+    {
+      "district": "Raipur",
+      "state": "Chhattisgarh",
+      "ro_code": "BPL",
+      "city": "Raipur",
+      "pincodes": [
+        "492001",
+        "492006",
+        "492010"
+      ]
+    },
+    {
+      "district": "Bilaspur",
+      "state": "Chhattisgarh",
+      "ro_code": "BPL",
+      "city": "Bilaspur",
+      "pincodes": [
+        "495001",
+        "495004",
+        "495006"
+      ]
+    },
+    {
+      "district": "Kolkata",
+      "state": "West Bengal",
+      "ro_code": "KOL",
+      "city": "Kolkata",
+      "pincodes": [
+        "700001",
+        "700019",
+        "700091"
+      ]
+    },
+    {
+      "district": "Howrah",
+      "state": "West Bengal",
+      "ro_code": "KOL",
+      "city": "Howrah",
+      "pincodes": [
+        "711101",
+        "711102",
+        "711103"
+      ]
+    },
+    {
+      "district": "Paschim Bardhaman",
+      "state": "West Bengal",
+      "ro_code": "KOL",
+      "city": "Durgapur",
+      "pincodes": [
+        "713201",
+        "713209",
+        "713216"
+      ]
+    },
+    {
+      "district": "Patna",
+      "state": "Bihar",
+      "ro_code": "KOL",
+      "city": "Patna",
+      "pincodes": [
+        "800001",
+        "800013",
+        "800020"
+      ]
+    },
+    {
+      "district": "Ranchi",
+      "state": "Jharkhand",
+      "ro_code": "KOL",
+      "city": "Ranchi",
+      "pincodes": [
+        "834001",
+        "834002",
+        "834008"
+      ]
+    },
+    {
+      "district": "Khordha",
+      "state": "Odisha",
+      "ro_code": "KOL",
+      "city": "Bhubaneswar",
+      "pincodes": [
+        "751001",
+        "751010",
+        "751024"
+      ]
+    },
+    {
+      "district": "Kamrup Metropolitan",
+      "state": "Assam",
+      "ro_code": "GHY",
+      "city": "Guwahati",
+      "pincodes": [
+        "781001",
+        "781005",
+        "781021"
+      ]
+    },
+    {
+      "district": "Dibrugarh",
+      "state": "Assam",
+      "ro_code": "GHY",
+      "city": "Dibrugarh",
+      "pincodes": [
+        "786001",
+        "786002",
+        "786003"
+      ]
+    },
+    {
+      "district": "Imphal West",
+      "state": "Manipur",
+      "ro_code": "GHY",
+      "city": "Imphal",
+      "pincodes": [
+        "795001",
+        "795002",
+        "795004"
+      ]
+    },
+    {
+      "district": "East Khasi Hills",
+      "state": "Meghalaya",
+      "ro_code": "GHY",
+      "city": "Shillong",
+      "pincodes": [
+        "793001",
+        "793003",
+        "793004"
+      ]
+    },
+    {
+      "district": "Bengaluru Urban",
+      "state": "Karnataka",
+      "ro_code": "BLR",
+      "city": "Bengaluru",
+      "pincodes": [
+        "560001",
+        "560037",
+        "560064"
+      ]
+    },
+    {
+      "district": "Mysuru",
+      "state": "Karnataka",
+      "ro_code": "BLR",
+      "city": "Mysuru",
+      "pincodes": [
+        "570001",
+        "570008",
+        "570017"
+      ]
+    },
+    {
+      "district": "Dakshina Kannada",
+      "state": "Karnataka",
+      "ro_code": "BLR",
+      "city": "Mangaluru",
+      "pincodes": [
+        "575001",
+        "575002",
+        "575006"
+      ]
+    },
+    {
+      "district": "Belagavi",
+      "state": "Karnataka",
+      "ro_code": "BLR",
+      "city": "Belagavi",
+      "pincodes": [
+        "590001",
+        "590006",
+        "590010"
+      ]
+    },
+    {
+      "district": "Dharwad",
+      "state": "Karnataka",
+      "ro_code": "BLR",
+      "city": "Hubballi",
+      "pincodes": [
+        "580020",
+        "580029",
+        "580030"
+      ]
+    },
+    {
+      "district": "Kalaburagi",
+      "state": "Karnataka",
+      "ro_code": "BLR",
+      "city": "Kalaburagi",
+      "pincodes": [
+        "585101",
+        "585102",
+        "585103"
+      ]
+    },
+    {
+      "district": "Hyderabad",
+      "state": "Telangana",
+      "ro_code": "HYD",
+      "city": "Hyderabad",
+      "pincodes": [
+        "500001",
+        "500032",
+        "500081"
+      ]
+    },
+    {
+      "district": "Rangareddy",
+      "state": "Telangana",
+      "ro_code": "HYD",
+      "city": "Hyderabad",
+      "pincodes": [
+        "501301",
+        "501505",
+        "501510"
+      ]
+    },
+    {
+      "district": "Medchal-Malkajgiri",
+      "state": "Telangana",
+      "ro_code": "HYD",
+      "city": "Medchal",
+      "pincodes": [
+        "501401",
+        "500100",
+        "500088"
+      ]
+    },
+    {
+      "district": "Sangareddy",
+      "state": "Telangana",
+      "ro_code": "HYD",
+      "city": "Sangareddy",
+      "pincodes": [
+        "502001",
+        "502032",
+        "502319"
+      ]
+    },
+    {
+      "district": "Warangal",
+      "state": "Telangana",
+      "ro_code": "HYD",
+      "city": "Warangal",
+      "pincodes": [
+        "506001",
+        "506002",
+        "506009"
+      ]
+    },
+    {
+      "district": "Karimnagar",
+      "state": "Telangana",
+      "ro_code": "HYD",
+      "city": "Karimnagar",
+      "pincodes": [
+        "505001",
+        "505002",
+        "505327"
+      ]
+    },
+    {
+      "district": "Nizamabad",
+      "state": "Telangana",
+      "ro_code": "HYD",
+      "city": "Nizamabad",
+      "pincodes": [
+        "503001",
+        "503002",
+        "503003"
+      ]
+    },
+    {
+      "district": "Khammam",
+      "state": "Telangana",
+      "ro_code": "HYD",
+      "city": "Khammam",
+      "pincodes": [
+        "507001",
+        "507002",
+        "507003"
+      ]
+    },
+    {
+      "district": "Visakhapatnam",
+      "state": "Andhra Pradesh",
+      "ro_code": "HYD",
+      "city": "Visakhapatnam",
+      "pincodes": [
+        "530001",
+        "530003",
+        "530017"
+      ]
+    },
+    {
+      "district": "NTR",
+      "state": "Andhra Pradesh",
+      "ro_code": "HYD",
+      "city": "Vijayawada",
+      "pincodes": [
+        "520001",
+        "520008",
+        "520010"
+      ]
+    },
+    {
+      "district": "Guntur",
+      "state": "Andhra Pradesh",
+      "ro_code": "HYD",
+      "city": "Guntur",
+      "pincodes": [
+        "522001",
+        "522002",
+        "522006"
+      ]
+    },
+    {
+      "district": "Tirupati",
+      "state": "Andhra Pradesh",
+      "ro_code": "HYD",
+      "city": "Tirupati",
+      "pincodes": [
+        "517501",
+        "517502",
+        "517507"
+      ]
+    },
+    {
+      "district": "Kurnool",
+      "state": "Andhra Pradesh",
+      "ro_code": "HYD",
+      "city": "Kurnool",
+      "pincodes": [
+        "518001",
+        "518002",
+        "518005"
+      ]
+    },
+    {
+      "district": "East Godavari",
+      "state": "Andhra Pradesh",
+      "ro_code": "HYD",
+      "city": "Rajamahendravaram",
+      "pincodes": [
+        "533101",
+        "533103",
+        "533105"
+      ]
+    },
+    {
+      "district": "Chennai",
+      "state": "Tamil Nadu",
+      "ro_code": "CHN",
+      "city": "Chennai",
+      "pincodes": [
+        "600001",
+        "600020",
+        "600042"
+      ]
+    },
+    {
+      "district": "Chengalpattu",
+      "state": "Tamil Nadu",
+      "ro_code": "CHN",
+      "city": "Chengalpattu",
+      "pincodes": [
+        "603001",
+        "603002",
+        "603202"
+      ]
+    },
+    {
+      "district": "Kancheepuram",
+      "state": "Tamil Nadu",
+      "ro_code": "CHN",
+      "city": "Kanchipuram",
+      "pincodes": [
+        "631501",
+        "631502",
+        "631551"
+      ]
+    },
+    {
+      "district": "Coimbatore",
+      "state": "Tamil Nadu",
+      "ro_code": "CHN",
+      "city": "Coimbatore",
+      "pincodes": [
+        "641001",
+        "641004",
+        "641014"
+      ]
+    },
+    {
+      "district": "Madurai",
+      "state": "Tamil Nadu",
+      "ro_code": "CHN",
+      "city": "Madurai",
+      "pincodes": [
+        "625001",
+        "625002",
+        "625016"
+      ]
+    },
+    {
+      "district": "Tiruchirappalli",
+      "state": "Tamil Nadu",
+      "ro_code": "CHN",
+      "city": "Tiruchirappalli",
+      "pincodes": [
+        "620001",
+        "620002",
+        "620017"
+      ]
+    },
+    {
+      "district": "Salem",
+      "state": "Tamil Nadu",
+      "ro_code": "CHN",
+      "city": "Salem",
+      "pincodes": [
+        "636001",
+        "636004",
+        "636007"
+      ]
+    },
+    {
+      "district": "Tirunelveli",
+      "state": "Tamil Nadu",
+      "ro_code": "CHN",
+      "city": "Tirunelveli",
+      "pincodes": [
+        "627001",
+        "627002",
+        "627007"
+      ]
+    },
+    {
+      "district": "Vellore",
+      "state": "Tamil Nadu",
+      "ro_code": "CHN",
+      "city": "Vellore",
+      "pincodes": [
+        "632001",
+        "632004",
+        "632009"
+      ]
+    },
+    {
+      "district": "Erode",
+      "state": "Tamil Nadu",
+      "ro_code": "CHN",
+      "city": "Erode",
+      "pincodes": [
+        "638001",
+        "638011",
+        "638052"
+      ]
+    },
+    {
+      "district": "Puducherry",
+      "state": "Puducherry",
+      "ro_code": "CHN",
+      "city": "Puducherry",
+      "pincodes": [
+        "605001",
+        "605003",
+        "605008"
+      ]
+    },
+    {
+      "district": "Thiruvananthapuram",
+      "state": "Kerala",
+      "ro_code": "TVM",
+      "city": "Thiruvananthapuram",
+      "pincodes": [
+        "695001",
+        "695004",
+        "695010"
+      ]
+    },
+    {
+      "district": "Ernakulam",
+      "state": "Kerala",
+      "ro_code": "TVM",
+      "city": "Kochi",
+      "pincodes": [
+        "682001",
+        "682011",
+        "682030"
+      ]
+    },
+    {
+      "district": "Kozhikode",
+      "state": "Kerala",
+      "ro_code": "TVM",
+      "city": "Kozhikode",
+      "pincodes": [
+        "673001",
+        "673004",
+        "673016"
+      ]
+    },
+    {
+      "district": "Thrissur",
+      "state": "Kerala",
+      "ro_code": "TVM",
+      "city": "Thrissur",
+      "pincodes": [
+        "680001",
+        "680004",
+        "680020"
+      ]
+    }
+  ]
+}

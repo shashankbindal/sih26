@@ -1,0 +1,627 @@
+{
+ "slots": {
+  "date": {
+   "en": [
+    "2 Oct",
+    "14 Aug",
+    "9 Jul",
+    "21 Jun",
+    "5 Sep",
+    "18 Nov",
+    "27 Jan",
+    "3 Mar",
+    "12 Dec",
+    "30 Apr"
+   ],
+   "hi": [
+    "2 अक्टूबर",
+    "14 अगस्त",
+    "9 जुलाई",
+    "21 जून",
+    "5 सितंबर",
+    "18 नवंबर",
+    "27 जनवरी",
+    "3 मार्च",
+    "12 दिसंबर",
+    "30 अप्रैल"
+   ],
+   "note": "generator may instead derive from the case's received_at minus a random offset and format per language; hinglish uses the en list"
+  },
+  "amount": {
+   "choices": [
+    12000,
+    18500,
+    25000,
+    40000,
+    55000,
+    72000,
+    85000,
+    120000,
+    160000
+   ],
+   "format": "rupee sign + en-IN grouping, e.g. 85,000 -> ₹85,000; same string in all languages"
+  },
+  "semester": {
+   "en": [
+    "1st",
+    "2nd",
+    "3rd",
+    "4th",
+    "5th",
+    "6th"
+   ],
+   "hi": [
+    "पहले",
+    "दूसरे",
+    "तीसरे",
+    "चौथे",
+    "पांचवें",
+    "छठे"
+   ],
+   "note": "templates read '{semester} semester' / '{semester} सेमेस्टर'; hinglish uses the en list"
+  },
+  "course": {
+   "en": [
+    "B.Tech",
+    "MBA",
+    "M.Tech",
+    "Diploma",
+    "B.Pharm",
+    "MCA"
+   ],
+   "hi": [
+    "बी.टेक",
+    "एमबीए",
+    "एम.टेक",
+    "डिप्लोमा",
+    "बी.फार्म",
+    "एमसीए"
+   ]
+  },
+  "dept": {
+   "en": [
+    "Computer Science",
+    "Mechanical",
+    "Civil",
+    "Electrical",
+    "Electronics",
+    "Information Technology"
+   ],
+   "hi": [
+    "कंप्यूटर साइंस",
+    "मैकेनिकल",
+    "सिविल",
+    "इलेक्ट्रिकल",
+    "इलेक्ट्रॉनिक्स",
+    "सूचना प्रौद्योगिकी"
+   ]
+  },
+  "n": {
+   "min": 2,
+   "max": 9,
+   "overrides": {
+    "FACULTY_SHORTAGE": [
+     3,
+     14
+    ],
+    "INFRASTRUCTURE": [
+     10,
+     55
+    ]
+   },
+   "note": "integer; used for months, weeks, days, years, count of faculty or systems depending on template; keep n >= 2 so plural forms read correctly. For INFRASTRUCTURE template 1, keep n < intake"
+  },
+  "intake": {
+   "choices": [
+    60,
+    90,
+    120,
+    180,
+    240
+   ]
+  },
+  "year": {
+   "choices": [
+    2023,
+    2024,
+    2025
+   ]
+  }
+ },
+ "reference_prefixes": {
+  "en": [
+   "Please refer to my earlier grievance {ref} already registered on CPGRAMS. I am sending this as a reminder by email.",
+   "This is in continuation of grievance {ref}. No action has been communicated so far."
+  ],
+  "hi": [
+   "कृपया सीपीग्राम्स पर पहले से दर्ज मेरी शिकायत {ref} का संदर्भ लें। मैं यह अनुस्मारक ईमेल से भेज रहा हूँ।",
+   "यह शिकायत {ref} के क्रम में है। अब तक कोई कार्रवाई सूचित नहीं की गई है।"
+  ],
+  "hinglish": [
+   "Meri CPGRAMS par pehle se darj shikayat {ref} ka reference dekhiye. Reminder ke taur par email bhej raha hoon.",
+   "Ye shikayat {ref} ke silsile mein hai. Abhi tak koi action inform nahi kiya gaya."
+  ]
+ },
+ "templates": {
+  "FEE_REFUND": {
+   "en": [
+    "I withdrew my admission to the {course} programme on {date} before the classes started, but the college has not refunded the fee of {amount} so far. I have written to them three times and received no reply.",
+    "The institution is refusing to refund {amount} collected as fees after I cancelled my admission on {date}. As per AICTE norms, only a processing fee of up to Rs. 1,000 can be deducted.",
+    "My ward left the {course} course in the {semester} semester and the seat was filled by another student, yet the college is not returning the fee paid for the remaining period. The total amount pending is {amount}.",
+    "I took back my admission on {date}. The college says the fee is non-refundable and has asked me to pay {amount} more for the full year. Kindly direct them to refund the fee.",
+    "The fee of {amount} paid at the time of counselling has not been refunded even after {n} months of cancelling my admission. The accounts office keeps asking me to visit again and again.",
+    "The college deducted {amount} as cancellation charges when I withdrew on {date}, which is far above the processing fee permitted by AICTE. I request a refund of the excess amount."
+   ],
+   "hi": [
+    "मैंने {date} को {course} में अपना प्रवेश रद्द कर दिया था, लेकिन कॉलेज ने अब तक {amount} की फीस वापस नहीं की है। तीन बार ईमेल करने पर भी कोई जवाब नहीं मिला।",
+    "प्रवेश रद्द करने के बाद भी संस्थान {amount} की जमा फीस लौटाने से मना कर रहा है। एआईसीटीई के नियमों के अनुसार केवल अधिकतम 1,000 रुपये का प्रोसेसिंग शुल्क ही काटा जा सकता है।",
+    "मेरे बेटे ने {semester} सेमेस्टर में {course} की पढ़ाई छोड़ दी और उसकी सीट पर दूसरा छात्र आ चुका है, फिर भी कॉलेज बाकी अवधि की फीस नहीं लौटा रहा। कुल {amount} बकाया हैं।",
+    "मैंने {date} को एडमिशन वापस ले लिया था। कॉलेज कहता है कि फीस वापस नहीं होगी और पूरे साल के लिए {amount} और जमा करने को कह रहा है। कृपया कॉलेज को फीस लौटाने का निर्देश दें।",
+    "काउंसलिंग के समय जमा की गई {amount} की फीस एडमिशन रद्द किए {n} महीने बाद भी वापस नहीं मिली है। अकाउंट्स ऑफिस बार-बार बुलाता है, पर पैसे नहीं देता।",
+    "{date} को प्रवेश वापस लेने पर कॉलेज ने कैंसलेशन चार्ज के नाम पर {amount} काट लिए, जो एआईसीटीई द्वारा तय प्रोसेसिंग शुल्क से कहीं ज़्यादा हैं। अतिरिक्त राशि वापस दिलाई जाए।"
+   ],
+   "hinglish": [
+    "Maine {date} ko admission cancel kiya tha, lekin college {amount} fees wapas nahi kar raha. 3 baar mail kiya, koi reply nahi.",
+    "Maine {date} ko admission withdraw kiya, {amount} fees abhi tak wapas nahi mili. College bolta hai 4 saal ki fees do tab certificate milega.",
+    "College ne {amount} fees rakh li hai jabki maine classes shuru hone se pehle hi admission cancel kar diya tha. Processing fee ke alawa kuch nahi katna chahiye.",
+    "Mere bete ne {semester} semester mein {course} chhod diya aur seat bhi bhar gayi, phir bhi college baki fees wapas nahi kar raha. {amount} abhi tak pending hain.",
+    "Admission cancel kiye {n} mahine ho gaye, fees ke {amount} abhi tak account mein nahi aaye. Accounts office roz naya bahana banata hai.",
+    "College ne cancellation charge ke naam par {amount} kaat liye, jo AICTE ke processing fee limit se bahut zyada hai. Kripya baaki paisa wapas dilwaiye."
+   ],
+   "short": {
+    "en": [
+     "Admission cancelled, college not refunding my fee.",
+     "Fee refund pending since {n} months.",
+     "No refund of {amount} after withdrawal.",
+     "Status of my fee refund please."
+    ],
+    "hi": [
+     "फीस वापस नहीं कर रहे",
+     "{amount} की फीस वापस नहीं मिली",
+     "प्रवेश रद्द, फीस का रिफंड लंबित",
+     "फीस वापसी की स्थिति बताएं"
+    ],
+    "hinglish": [
+     "Admission cancel kiya, fees wapas nahi mili",
+     "{amount} fees refund nahi ho rahi",
+     "Fees wapas karwaiye, {n} mahine se pending",
+     "Fee refund ka status kya hai"
+    ]
+   }
+  },
+  "CERTIFICATE_WITHHELD": {
+   "en": [
+    "The college is not returning my original 10th and 12th marksheets and is demanding the fee for all four years of the {course} programme.",
+    "I left the institution on {date}, but my original transfer certificate and migration certificate are still being held. The college asks for {amount} as pending dues before releasing them.",
+    "My original documents were submitted at the time of admission. After I took a transfer in the {semester} semester, the college refuses to hand them over without payment of {amount}.",
+    "Despite repeated visits to the office, the institution has withheld my degree certificate and final marksheet for {n} months, saying that hostel dues of {amount} are pending.",
+    "The original certificates of my daughter have been retained by the college since {date}. This is not permitted under the AICTE fee refund policy, and she cannot apply for a job or for further studies.",
+    "The college is demanding {amount} as a document release fee for returning my school leaving certificate. I withdrew from {course} on {date}."
+   ],
+   "hi": [
+    "कॉलेज मेरे मूल प्रमाणपत्र (10वीं, 12वीं की मार्कशीट) वापस नहीं कर रहा है और पूरे चार साल की फीस मांग रहा है।",
+    "मैंने {date} को संस्थान छोड़ दिया था, लेकिन मेरा मूल स्थानांतरण प्रमाणपत्र और माइग्रेशन सर्टिफिकेट अब भी रोक रखा है। कॉलेज इन्हें देने के लिए {amount} बकाया के रूप में मांग रहा है।",
+    "एडमिशन के समय जमा किए गए मेरे मूल दस्तावेज़ कॉलेज ने रख लिए हैं। {semester} सेमेस्टर में ट्रांसफर लेने के बाद भी वे {amount} जमा किए बिना दस्तावेज़ लौटाने से इनकार कर रहे हैं।",
+    "कार्यालय के कई चक्कर लगाने के बाद भी संस्थान ने {n} महीने से मेरी डिग्री और अंतिम मार्कशीट रोक रखी है। उनका कहना है कि {amount} हॉस्टल बकाया है।",
+    "मेरी बेटी के मूल प्रमाणपत्र {date} से कॉलेज के पास पड़े हैं। एआईसीटीई की फीस वापसी नीति में यह मना है, और इनके बिना वह न नौकरी के लिए आवेदन कर पा रही है, न आगे पढ़ाई के लिए।",
+    "स्कूल छोड़ने का मेरा प्रमाणपत्र लौटाने के लिए कॉलेज {amount} दस्तावेज़ रिलीज़ शुल्क मांग रहा है। मैंने {date} को {course} से नाम वापस लिया था।"
+   ],
+   "hinglish": [
+    "College mere original certificates (10th aur 12th ki marksheet) wapas nahi kar raha aur pure 4 saal ki fees maang raha hai.",
+    "Maine {date} ko college chhod diya par mera TC aur migration certificate abhi bhi rok rakha hai. Bolte hain {amount} dues clear karo tab milega.",
+    "Admission ke time jama kiye original documents college ne rakh liye hain. {semester} semester mein transfer lene ke baad bhi {amount} ke bina dene se mana kar rahe hain.",
+    "{n} mahine se degree certificate aur final marksheet nahi mil rahi, college bolta hai hostel ke {amount} baki hain. Office ke kitne chakkar laga chuka hoon.",
+    "Meri behan ke original certificates {date} se college ke paas hain. Bina inke wo job ya aage padhai ke liye apply nahi kar paa rahi.",
+    "School leaving certificate wapas karne ke liye college {amount} document release fee maang raha hai. Maine {date} ko {course} se naam wapas liya tha."
+   ],
+   "short": {
+    "en": [
+     "College holding my original certificates.",
+     "Marksheet and TC not returned by college.",
+     "Original documents withheld, fee demanded."
+    ],
+    "hi": [
+     "मूल प्रमाणपत्र वापस नहीं कर रहे",
+     "मार्कशीट और टीसी रोक रखी है",
+     "मूल दस्तावेज़ रोके, फीस की मांग"
+    ],
+    "hinglish": [
+     "Original certificate wapas nahi kar rahe",
+     "Marksheet aur TC college ne rok rakhi hai",
+     "Documents rok liye, fees maang rahe hain"
+    ]
+   }
+  },
+  "FACULTY_SHORTAGE": {
+   "en": [
+    "The {dept} department has only {n} regular faculty against the approved intake of {intake}. Classes are taken by guest lecturers.",
+    "Most of the teaching in the {dept} branch is done by visiting staff. The college has no regular professor for the core subjects of the {semester} semester and the syllabus is incomplete.",
+    "The institution has advertised {n} faculty members on its website, but only a few appear in the classes. The faculty-student ratio in {dept} is nowhere near the AICTE norm.",
+    "There has been no teacher for the {dept} laboratory subjects since {date}. Students of {course} are being asked to study on their own before the university exams.",
+    "The college has increased the intake to {intake} seats in {dept} without recruiting additional faculty. Classes are overcrowded and many lectures are not held.",
+    "Faculty members shown in the AICTE mandatory disclosure for {dept} have left the college, but their names are still displayed. Currently only {n} teachers are present."
+   ],
+   "hi": [
+    "{dept} विभाग में स्वीकृत प्रवेश क्षमता {intake} के मुकाबले केवल {n} नियमित शिक्षक हैं। कक्षाएं अतिथि व्याख्याताओं से करवाई जा रही हैं।",
+    "{dept} शाखा में ज़्यादातर पढ़ाई अस्थायी शिक्षकों के भरोसे है। {semester} सेमेस्टर के मुख्य विषयों के लिए कोई नियमित प्रोफेसर नहीं है और पाठ्यक्रम अधूरा है।",
+    "संस्थान ने अपनी वेबसाइट पर {n} शिक्षकों के नाम दिखाए हैं, पर कक्षाओं में कुछ ही दिखाई देते हैं। {dept} में शिक्षक-छात्र अनुपात एआईसीटीई के मानक से बहुत कम है।",
+    "{date} से {dept} की प्रयोगशाला के विषयों के लिए कोई शिक्षक नहीं है। {course} के छात्रों से परीक्षा से पहले खुद पढ़ने को कहा जा रहा है।",
+    "कॉलेज ने बिना अतिरिक्त शिक्षक नियुक्त किए {dept} में सीटें बढ़ाकर {intake} कर दी हैं। कक्षाओं में भीड़ है और कई लेक्चर होते ही नहीं।",
+    "एआईसीटीई के अनिवार्य प्रकटीकरण में {dept} के जो शिक्षक दिखाए गए हैं, वे कॉलेज छोड़ चुके हैं, पर उनके नाम अब भी लगे हैं। इस समय केवल {n} शिक्षक मौजूद हैं।"
+   ],
+   "hinglish": [
+    "{dept} department mein approved intake {intake} hai lekin sirf {n} regular faculty hain. Classes guest lecturers le rahe hain.",
+    "{dept} branch mein zyadatar padhai visiting teachers se ho rahi hai. {semester} semester ke core subjects ke liye koi regular professor nahi hai, syllabus adhura hai.",
+    "College ne website par {n} faculty ke naam dikhaye hain par classes mein kuch hi aate hain. {dept} mein faculty-student ratio AICTE norm se bahut kam hai.",
+    "{date} se {dept} lab subjects ka koi teacher nahi hai. {course} ke students ko exam se pehle khud padhne ko bola ja raha hai.",
+    "College ne bina naye teacher rakhe {dept} mein intake badhakar {intake} kar diya. Classes mein bheed hai aur kai lectures hote hi nahi.",
+    "Mandatory disclosure mein {dept} ke jo faculty dikhaye gaye wo college chhod chuke hain, naam abhi bhi lage hain. Abhi sirf {n} teachers hain."
+   ],
+   "short": {
+    "en": [
+     "Not enough regular faculty in {dept}.",
+     "Classes taken only by guest lecturers.",
+     "No teachers for {semester} semester subjects."
+    ],
+    "hi": [
+     "{dept} में नियमित शिक्षकों की कमी",
+     "सिर्फ अतिथि शिक्षक पढ़ा रहे हैं",
+     "शिक्षकों की भारी कमी"
+    ],
+    "hinglish": [
+     "{dept} mein regular faculty nahi hai",
+     "Sirf guest lecturers padha rahe hain",
+     "Teachers ki bahut kami hai"
+    ]
+   }
+  },
+  "INFRASTRUCTURE": {
+   "en": [
+    "The computer lab has only {n} working systems for {intake} students; the rest have been out of order for months.",
+    "The {dept} laboratory lacks the basic equipment listed in the AICTE norms. Students of the {semester} semester cannot complete their practicals and journals are signed without experiments.",
+    "The college library has not purchased any new books since {year}, and the reading room is closed on most days.",
+    "Hostel rooms have had no drinking water for {n} days at a stretch and the mess food is unhygienic. Repeated requests to the warden were ignored.",
+    "The institution is running classes in a rented building with leaking roofs. The fire safety certificate and the building completion certificate were never shown to us.",
+    "Internet and Wi-Fi in the campus have not worked since {date}. Online submissions and the lab software required for {course} cannot be used.",
+    "The computer lab has 20 working systems for 120 students."
+   ],
+   "hi": [
+    "कंप्यूटर लैब में {intake} छात्रों के लिए केवल {n} चालू सिस्टम हैं, बाकी महीनों से खराब पड़े हैं।",
+    "{dept} प्रयोगशाला में एआईसीटीई मानकों में दिए गए बुनियादी उपकरण नहीं हैं। {semester} सेमेस्टर के छात्र अपने प्रैक्टिकल पूरे नहीं कर पा रहे और बिना प्रयोग किए ही जर्नल पर हस्ताक्षर हो रहे हैं।",
+    "कॉलेज के पुस्तकालय में {year} के बाद कोई नई पुस्तक नहीं आई है और रीडिंग रूम ज़्यादातर दिन बंद रहता है।",
+    "छात्रावास में लगातार {n} दिनों तक पीने का पानी नहीं आया और मेस का खाना भी साफ-सुथरा नहीं है। वार्डन से बार-बार कहने पर भी सुनवाई नहीं हुई।",
+    "संस्थान किराये की ऐसी इमारत में कक्षाएं चला रहा है जिसकी छत टपकती है। अग्निशमन प्रमाणपत्र और भवन पूर्णता प्रमाणपत्र हमें कभी दिखाए नहीं गए।",
+    "{date} से परिसर में इंटरनेट और वाई-फाई बंद है। ऑनलाइन जमा करने का काम और {course} के लिए ज़रूरी लैब सॉफ्टवेयर इस्तेमाल नहीं हो पा रहा।",
+    "कंप्यूटर लैब में 120 छात्रों के लिए केवल 20 चालू सिस्टम हैं।"
+   ],
+   "hinglish": [
+    "Computer lab mein {intake} students ke liye sirf {n} working systems hain, baaki mahino se kharab padhe hain.",
+    "{dept} lab mein AICTE norms wale basic equipment nahi hain. {semester} semester ke students practical nahi kar paa rahe aur bina experiment ke journal sign ho rahe hain.",
+    "College library mein {year} ke baad koi nayi book nahi aayi aur reading room zyadatar band rehta hai.",
+    "Hostel mein lagatar {n} din se peene ka paani nahi aa raha aur mess ka khana bhi saaf nahi hai. Warden ko bolne par bhi koi sunwai nahi.",
+    "College kiraye ki building mein chal raha hai jiski chhat tapakti hai. Fire safety certificate aur building completion certificate kabhi dikhaye nahi gaye.",
+    "{date} se campus mein internet aur wifi band hai. Online submission aur {course} ke liye zaroori lab software use nahi ho pa raha.",
+    "Computer lab mein 120 students ke liye sirf 20 working systems hain."
+   ],
+   "short": {
+    "en": [
+     "Lab equipment missing in {dept}.",
+     "Hostel has no drinking water.",
+     "Library and lab facilities are inadequate."
+    ],
+    "hi": [
+     "प्रयोगशाला में उपकरण नहीं हैं",
+     "छात्रावास में पीने का पानी नहीं",
+     "लैब और पुस्तकालय की सुविधा अपर्याप्त"
+    ],
+    "hinglish": [
+     "Lab mein equipment nahi hai",
+     "Hostel mein peene ka paani nahi",
+     "Library aur lab ki suvidha kam hai"
+    ]
+   }
+  },
+  "RAGGING": {
+   "en": [
+    "Senior students of the {dept} department are ragging first-year students in the hostel at night. They are forced to do degrading tasks and threatened if they complain.",
+    "I was beaten and abused by seniors on {date} in the hostel. The anti-ragging committee of the college has not taken any action despite a written complaint.",
+    "Ragging is going on openly in the college campus, and the management denies it. First-year students are scared to attend classes. Please send an inspection team.",
+    "My son was threatened by senior students and made to hand over money on {date}. The college authorities asked us to settle the matter among ourselves.",
+    "A student of {course} has been harassed by seniors for {n} weeks and has stopped attending college. The institution has not informed the police or the anti-ragging squad.",
+    "There is no anti-ragging helpline displayed in the campus, and the ragging incidents of the last {n} months were hidden from the university and AICTE."
+   ],
+   "hi": [
+    "{dept} विभाग के सीनियर छात्र रात में छात्रावास में नए छात्रों की रैगिंग कर रहे हैं। उनसे अपमानजनक काम करवाए जाते हैं और शिकायत करने पर धमकी दी जाती है।",
+    "{date} को छात्रावास में सीनियर छात्रों ने मुझे मारा-पीटा और गाली-गलौज की। लिखित शिकायत देने के बाद भी कॉलेज की एंटी-रैगिंग कमेटी ने कोई कार्रवाई नहीं की।",
+    "कॉलेज परिसर में खुलेआम रैगिंग हो रही है और प्रबंधन इससे इनकार कर रहा है। प्रथम वर्ष के छात्र कक्षा में आने से डरते हैं। कृपया निरीक्षण दल भेजा जाए।",
+    "{date} को मेरे बेटे को सीनियर छात्रों ने धमकाया और उससे पैसे ले लिए। कॉलेज प्रशासन ने हमें आपस में ही मामला सुलझाने को कहा।",
+    "{course} का एक छात्र {n} हफ्तों से सीनियर छात्रों द्वारा परेशान किया जा रहा है और अब कॉलेज आना बंद कर चुका है। संस्थान ने न पुलिस को सूचित किया, न एंटी-रैगिंग स्क्वाड को।",
+    "परिसर में कहीं भी एंटी-रैगिंग हेल्पलाइन नहीं लगी है और पिछले {n} महीनों की रैगिंग की घटनाएं विश्वविद्यालय और एआईसीटीई से छिपाई गईं।"
+   ],
+   "hinglish": [
+    "{dept} department ke seniors raat ko hostel mein first-year students ki ragging kar rahe hain. Unse ajeeb kaam karwaye jaate hain aur complaint karne par dhamki milti hai.",
+    "{date} ko hostel mein seniors ne mujhe maara aur gaali di. Likhit complaint ke baad bhi college ki anti-ragging committee ne koi action nahi liya.",
+    "Campus mein khule aam ragging ho rahi hai aur management mana kar raha hai. First-year ke bachche class aane se darte hain. Please inspection team bhejiye.",
+    "{date} ko mere bete ko seniors ne dhamkaya aur paise le liye. College walon ne bola aapas mein sulajh lo.",
+    "{course} ka ek student {n} hafte se seniors se pareshan hai aur ab college aana band kar diya. Institute ne na police ko bataya na anti-ragging squad ko.",
+    "Campus mein anti-ragging helpline kahin nahi lagi hai aur pichhle {n} mahine ki ragging ki ghatnayein university aur AICTE se chhupayi gayi."
+   ],
+   "short": {
+    "en": [
+     "Ragging by seniors in the hostel.",
+     "Student beaten by seniors, no action.",
+     "Anti-ragging committee not acting."
+    ],
+    "hi": [
+     "छात्रावास में सीनियर्स द्वारा रैगिंग",
+     "सीनियर्स ने मारा, कार्रवाई नहीं",
+     "एंटी-रैगिंग कमेटी निष्क्रिय"
+    ],
+    "hinglish": [
+     "Hostel mein seniors ragging kar rahe hain",
+     "Seniors ne maara, koi action nahi",
+     "Anti-ragging committee kuch nahi kar rahi"
+    ]
+   }
+  },
+  "FAKE_APPROVAL_CLAIM": {
+   "en": [
+    "The college advertises an AICTE approval for MBA that does not appear in the approved list.",
+    "The college is advertising admissions to {course} claiming AICTE approval, but I could not find it in the approved institutions list on the AICTE portal for this year.",
+    "I took admission in {course} on {date} based on a hoarding saying AICTE approved. Later I learned that the programme has no approval and the university will not issue my degree.",
+    "The institution's brochure shows an intake of {intake} for {dept}, whereas the approval letter on the portal permits far fewer seats. This is misleading to students.",
+    "The college uses the AICTE logo and a fake approval certificate on its website. The permanent ID printed on it does not match any record.",
+    "The programme was shown as AICTE approved during counselling, but now the college says the approval is under process. Many students have already paid {amount} as fees."
+   ],
+   "hi": [
+    "कॉलेज एमबीए के लिए एआईसीटीई की जिस मान्यता का प्रचार कर रहा है, वह स्वीकृत सूची में दिखाई ही नहीं देती।",
+    "कॉलेज एआईसीटीई मान्यता का दावा करके {course} में प्रवेश का विज्ञापन दे रहा है, लेकिन मुझे इस वर्ष की एआईसीटीई पोर्टल की स्वीकृत संस्थानों की सूची में यह नहीं मिला।",
+    "एआईसीटीई से मान्यता प्राप्त लिखे होर्डिंग को देखकर मैंने {date} को {course} में दाखिला लिया। बाद में पता चला कि इस पाठ्यक्रम को कोई मान्यता नहीं है और विश्वविद्यालय मेरी डिग्री नहीं देगा।",
+    "संस्थान की ब्रोशर में {dept} के लिए {intake} सीटें दिखाई गई हैं, जबकि पोर्टल पर मौजूद स्वीकृति पत्र में इससे बहुत कम सीटों की अनुमति है। यह छात्रों को गुमराह करना है।",
+    "कॉलेज अपनी वेबसाइट पर एआईसीटीई का लोगो और नकली मान्यता प्रमाणपत्र लगाए हुए है। उस पर छपा स्थायी आईडी किसी रिकॉर्ड से मेल नहीं खाता।",
+    "काउंसलिंग के समय पाठ्यक्रम को एआईसीटीई से मान्यता प्राप्त बताया गया था, पर अब कॉलेज कहता है कि मान्यता प्रक्रियाधीन है। कई छात्र {amount} फीस जमा कर चुके हैं।"
+   ],
+   "hinglish": [
+    "College MBA ke liye AICTE approval ka prachar kar raha hai jo approved list mein dikhta hi nahi.",
+    "College AICTE approval ka claim karke {course} ke admission ka vigyapan de raha hai, lekin mujhe iss saal ki AICTE portal ki approved list mein ye nahi mila.",
+    "AICTE approved likhe hoarding ko dekhkar maine {date} ko {course} mein admission liya. Baad mein pata chala ki programme ki approval hi nahi hai aur university degree nahi degi.",
+    "College ki brochure mein {dept} ke liye {intake} seats dikhayi hain, jabki portal ke approval letter mein bahut kam seats ki permission hai. Ye students ko gumrah karna hai.",
+    "College ne apni website par AICTE ka logo aur farzi approval certificate lagaya hai. Uspar likha permanent ID kisi record se match nahi karta.",
+    "Counselling ke time programme ko AICTE approved bataya gaya tha, ab college bolta hai approval under process hai. Kai students {amount} fees jama kar chuke hain."
+   ],
+   "short": {
+    "en": [
+     "College claims fake AICTE approval.",
+     "Approval claimed is not in the approved list.",
+     "Misleading AICTE approval advertisement."
+    ],
+    "hi": [
+     "फर्जी एआईसीटीई मान्यता का दावा",
+     "मान्यता स्वीकृत सूची में नहीं है",
+     "मान्यता का भ्रामक विज्ञापन"
+    ],
+    "hinglish": [
+     "College farzi AICTE approval bata raha hai",
+     "Approval approved list mein nahi hai",
+     "Approval ka misleading vigyapan"
+    ]
+   }
+  },
+  "SCHOLARSHIP": {
+   "en": [
+    "My post-matric scholarship for the {year} academic year has not been credited to my account yet. The college says it has forwarded the form, but the portal shows it as pending at the institution level.",
+    "The college has not verified my scholarship application on the portal even after {n} reminders, so my {course} scholarship of {amount} is stuck.",
+    "The scholarship amount of {amount} was credited to the college account, but the institution has not passed it on to me. They keep saying the money has not arrived.",
+    "I am being asked to pay the full tuition fee in advance and wait for reimbursement under the fee waiver scheme. The college is not accepting my scholarship sanction letter.",
+    "My scholarship has been pending since {date} because the college uploaded wrong attendance and bank details. Nobody in the office takes responsibility for correcting them.",
+    "The college has not issued the bonafide certificate required for the scholarship, and the last date for the {year} application is nearing."
+   ],
+   "hi": [
+    "{year} शैक्षणिक सत्र की मेरी पोस्ट-मैट्रिक छात्रवृत्ति अब तक मेरे खाते में नहीं आई है। कॉलेज कहता है कि उसने फॉर्म आगे भेज दिया, पर पोर्टल पर यह संस्थान स्तर पर लंबित दिखा रहा है।",
+    "{n} बार याद दिलाने के बाद भी कॉलेज ने पोर्टल पर मेरा छात्रवृत्ति आवेदन सत्यापित नहीं किया है, जिससे {course} की {amount} की छात्रवृत्ति अटकी हुई है।",
+    "{amount} की छात्रवृत्ति राशि कॉलेज के खाते में आ चुकी है, लेकिन संस्थान ने मुझे नहीं दी। वे बार-बार कहते हैं कि पैसा अभी आया ही नहीं।",
+    "मुझसे पूरी ट्यूशन फीस पहले जमा करने और बाद में शुल्क प्रतिपूर्ति का इंतज़ार करने को कहा जा रहा है। कॉलेज मेरा छात्रवृत्ति स्वीकृति पत्र मान ही नहीं रहा।",
+    "कॉलेज ने गलत उपस्थिति और बैंक विवरण अपलोड कर दिए, इसलिए {date} से मेरी छात्रवृत्ति लंबित है। कार्यालय में कोई इन्हें सुधारने की ज़िम्मेदारी नहीं लेता।",
+    "कॉलेज ने छात्रवृत्ति के लिए ज़रूरी बोनाफाइड प्रमाणपत्र जारी नहीं किया है, जबकि {year} के आवेदन की अंतिम तिथि पास आ रही है।"
+   ],
+   "hinglish": [
+    "Mera {year} ka post-matric scholarship abhi tak account mein nahi aaya. College kehta hai form aage bhej diya, par portal par institute level par pending dikha raha hai.",
+    "{n} baar yaad dilane ke baad bhi college ne portal par mera scholarship application verify nahi kiya, isliye {course} ki {amount} ki scholarship atki hui hai.",
+    "{amount} ki scholarship college ke account mein aa chuki hai par institute ne mujhe nahi di. Bolte hain paisa aaya hi nahi.",
+    "Mujhse poori tuition fees pehle jama karne aur baad mein reimbursement ka wait karne ko bola ja raha hai. College mera scholarship sanction letter maan hi nahi raha.",
+    "College ne galat attendance aur bank details upload kar diye, isliye {date} se meri scholarship pending hai. Office mein koi sudharne ki zimmedari nahi leta.",
+    "College ne scholarship ke liye zaroori bonafide certificate nahi diya, aur {year} ke application ki last date paas aa rahi hai."
+   ],
+   "short": {
+    "en": [
+     "Post-matric scholarship not credited.",
+     "Scholarship pending at college level.",
+     "College not verifying scholarship form."
+    ],
+    "hi": [
+     "छात्रवृत्ति खाते में नहीं आई",
+     "कॉलेज स्तर पर छात्रवृत्ति लंबित",
+     "कॉलेज छात्रवृत्ति फॉर्म सत्यापित नहीं कर रहा"
+    ],
+    "hinglish": [
+     "Scholarship account mein nahi aayi",
+     "Scholarship college level par pending hai",
+     "College scholarship form verify nahi kar raha"
+    ]
+   }
+  },
+  "ADMISSION": {
+   "en": [
+    "The college denied me admission to {course} even though I secured a rank in the counselling and was allotted a seat. They asked for a donation of {amount}.",
+    "The institution is charging {amount} as capitation fee for a management quota seat in {dept}, and is not giving any receipt.",
+    "The admission list of {year} was changed after counselling and students with lower merit were given seats in {course}. Reservation rules were not followed.",
+    "I was allotted a seat at this college through the centralised counselling on {date}, but the college refuses to accept my allotment letter and says the seats are full.",
+    "The college is taking students into {course} lateral entry who do not meet the eligibility conditions, and is asking for {amount} to arrange the papers.",
+    "The college did not hold the admission process as per the schedule. I could not join on time because the seat allotment was shown only on {date}, and now they have cancelled my seat."
+   ],
+   "hi": [
+    "काउंसलिंग में रैंक आने और सीट आवंटित होने के बाद भी कॉलेज ने मुझे {course} में प्रवेश देने से मना कर दिया। उन्होंने {amount} का डोनेशन मांगा।",
+    "संस्थान {dept} में मैनेजमेंट कोटे की सीट के लिए {amount} कैपिटेशन फीस ले रहा है और कोई रसीद भी नहीं दे रहा।",
+    "काउंसलिंग के बाद {year} की प्रवेश सूची बदल दी गई और कम मेरिट वाले छात्रों को {course} में सीट दे दी गई। आरक्षण के नियमों का पालन नहीं हुआ।",
+    "{date} को केंद्रीकृत काउंसलिंग से मुझे इस कॉलेज में सीट आवंटित हुई थी, लेकिन कॉलेज मेरा आवंटन पत्र लेने से इनकार कर रहा है और कह रहा है कि सीटें भर चुकी हैं।",
+    "कॉलेज {course} में लेटरल एंट्री के लिए ऐसे छात्रों को प्रवेश दे रहा है जो पात्रता शर्तें पूरी नहीं करते, और कागज़ात बनवाने के नाम पर {amount} मांग रहा है।",
+    "कॉलेज ने प्रवेश प्रक्रिया समय-सारणी के अनुसार नहीं की। सीट आवंटन केवल {date} को दिखाया गया, इसलिए मैं समय पर जॉइन नहीं कर सका, और अब उन्होंने मेरी सीट रद्द कर दी है।"
+   ],
+   "hinglish": [
+    "Counselling mein rank aane aur seat allot hone ke baad bhi college ne mujhe {course} mein admission dene se mana kar diya. {amount} ka donation maanga.",
+    "College {dept} mein management quota seat ke liye {amount} capitation fee le raha hai aur koi receipt bhi nahi de raha.",
+    "Counselling ke baad {year} ki admission list badal di gayi aur kam merit wale students ko {course} mein seat de di gayi. Reservation rules follow nahi hue.",
+    "{date} ko centralised counselling se mujhe is college mein seat allot hui thi, par college mera allotment letter lene se mana kar raha hai aur bol raha hai seats full hain.",
+    "College {course} mein lateral entry ke liye aise students ko admission de raha hai jo eligibility poori nahi karte, aur papers banwane ke naam par {amount} maang raha hai.",
+    "College ne admission process schedule ke hisaab se nahi kiya. Seat allotment sirf {date} ko dikhaya gaya, isliye main time par join nahi kar paya, ab unhone meri seat cancel kar di."
+   ],
+   "short": {
+    "en": [
+     "Seat denied despite allotment letter.",
+     "Donation demanded for admission.",
+     "Admission list changed after counselling."
+    ],
+    "hi": [
+     "आवंटन के बाद भी सीट देने से मना किया",
+     "प्रवेश के लिए डोनेशन मांगा गया",
+     "काउंसलिंग के बाद प्रवेश सूची बदली"
+    ],
+    "hinglish": [
+     "Allotment ke baad bhi seat dene se mana kiya",
+     "Admission ke liye donation maanga ja raha hai",
+     "Counselling ke baad admission list badli"
+    ]
+   }
+  },
+  "SERVICE_MATTER": {
+   "en": [
+    "Faculty salary not paid for {n} months in the {dept} department. The management says the college has no funds, but admissions for {year} are going on as usual.",
+    "I was terminated from my post of assistant professor on {date} without any notice or show-cause. I request AICTE to look into the pay and service rules applicable.",
+    "The college deducts provident fund from our salary but does not deposit it. Many of us have worked for {n} years and the PF statement shows no contribution.",
+    "Teaching staff are paid {amount} per month against the pay scale in the appointment letter, and are forced to sign for the full amount.",
+    "The management has not given the increment and promotion due since {year}, and is threatening to relieve those who raise the matter.",
+    "I resigned on {date} after giving the required notice, but the college has not settled my dues and is withholding my experience and relieving letters."
+   ],
+   "hi": [
+    "{dept} विभाग के शिक्षकों को {n} महीनों से वेतन नहीं मिला है। प्रबंधन कहता है कि कॉलेज के पास पैसे नहीं हैं, जबकि {year} के लिए प्रवेश हमेशा की तरह चल रहे हैं।",
+    "मुझे {date} को बिना किसी नोटिस या कारण बताओ नोटिस के सहायक प्रोफेसर के पद से हटा दिया गया। मेरा अनुरोध है कि एआईसीटीई लागू वेतन और सेवा नियमों की जांच करे।",
+    "कॉलेज हमारे वेतन से भविष्य निधि (पीएफ) तो काटता है, लेकिन जमा नहीं करता। हममें से कई लोग {n} साल से काम कर रहे हैं और पीएफ विवरण में कोई जमा राशि दिखती ही नहीं।",
+    "शिक्षण कर्मचारियों को नियुक्ति पत्र में लिखे वेतनमान के बजाय केवल {amount} प्रति माह दिए जाते हैं, और पूरे वेतन की रसीद पर हस्ताक्षर करवाए जाते हैं।",
+    "प्रबंधन ने {year} से देय वेतन वृद्धि और पदोन्नति नहीं दी है, और मामला उठाने वालों को निकालने की धमकी दे रहा है।",
+    "आवश्यक नोटिस देकर मैंने {date} को इस्तीफा दिया था, पर कॉलेज ने मेरा बकाया चुकता नहीं किया और अनुभव प्रमाणपत्र तथा कार्यमुक्ति पत्र रोक रखा है।"
+   ],
+   "hinglish": [
+    "{dept} department ke teachers ko {n} mahine se salary nahi mili hai. Management bolta hai college ke paas paise nahi hain, jabki {year} ke admission pehle jaise chal rahe hain.",
+    "Mujhe {date} ko bina kisi notice ya show-cause ke assistant professor ki post se hata diya gaya. AICTE se request hai ki pay aur service rules ki jaanch kare.",
+    "College hamari salary se PF kaat leta hai lekin jama nahi karta. Hum mein se kai log {n} saal se kaam kar rahe hain aur PF statement mein koi contribution dikhta hi nahi.",
+    "Teaching staff ko appointment letter ke pay scale ki jagah sirf {amount} per month diye jaate hain, aur poori salary ki receipt par sign karwaya jata hai.",
+    "Management ne {year} se due increment aur promotion nahi diya, aur baat uthane walon ko nikalne ki dhamki de raha hai.",
+    "Required notice dekar maine {date} ko resign kiya tha, par college ne mera baaki hisaab clear nahi kiya aur experience letter aur relieving letter rok rakha hai."
+   ],
+   "short": {
+    "en": [
+     "Faculty salary not paid for {n} months.",
+     "PF deducted but not deposited.",
+     "Terminated without notice."
+    ],
+    "hi": [
+     "{n} महीने से शिक्षकों का वेतन बकाया",
+     "पीएफ कटता है पर जमा नहीं होता",
+     "बिना नोटिस नौकरी से हटाया"
+    ],
+    "hinglish": [
+     "Faculty ki salary {n} mahine se nahi mili",
+     "PF kat raha hai par jama nahi hota",
+     "Bina notice ke job se nikala"
+    ]
+   }
+  },
+  "SCRUTINY_COMMITTEE": {
+   "en": [
+    "The scrutiny committee review of the faculty norms of the {dept} department is pending. The college has submitted its reply, but no inspection has been scheduled.",
+    "As per the last scrutiny committee report, the college had {n} deficiencies, yet the extension of approval was granted. Please re-examine the file.",
+    "I request that the matter be placed before the expert committee. The institution's compliance report on faculty and infrastructure does not match the facts on the ground.",
+    "The college was asked to submit its deficiency compliance by {date}, but nothing has been uploaded on the portal, and the committee has not taken any decision.",
+    "The inspection report for {course} says the building area is less than the norms, but the committee recommended continuation. We ask for a review of this recommendation.",
+    "The scrutiny of the college's application for the {year} intake in {dept} has been pending for {n} months, and the institution is already advertising admissions."
+   ],
+   "hi": [
+    "{dept} विभाग के शिक्षक मानदंडों के लिए जांच समिति की समीक्षा लंबित है। कॉलेज ने अपना जवाब दे दिया है, लेकिन कोई निरीक्षण तय नहीं हुआ है।",
+    "पिछली जांच समिति की रिपोर्ट के अनुसार कॉलेज में {n} कमियां थीं, फिर भी मान्यता का विस्तार दे दिया गया। कृपया फाइल की दोबारा जांच की जाए।",
+    "मेरा अनुरोध है कि यह मामला विशेषज्ञ समिति के सामने रखा जाए। संस्थान की शिक्षक और बुनियादी ढांचे की अनुपालन रिपोर्ट ज़मीनी हकीकत से मेल नहीं खाती।",
+    "कॉलेज को {date} तक कमियों का अनुपालन जमा करना था, पर पोर्टल पर कुछ भी अपलोड नहीं किया गया और समिति ने भी कोई निर्णय नहीं लिया।",
+    "{course} की निरीक्षण रिपोर्ट में भवन का क्षेत्रफल मानकों से कम बताया गया, फिर भी समिति ने मान्यता जारी रखने की अनुशंसा की। हम इस अनुशंसा की समीक्षा चाहते हैं।",
+    "{year} सत्र में {dept} के लिए कॉलेज के आवेदन की जांच {n} महीने से लंबित है, और संस्थान अभी से प्रवेश का विज्ञापन दे रहा है।"
+   ],
+   "hinglish": [
+    "{dept} department ke faculty norms ke liye scrutiny committee ka review pending hai. College ne apna reply de diya hai, lekin koi inspection schedule nahi hua.",
+    "Pichhli scrutiny committee report ke hisaab se college mein {n} deficiencies thi, phir bhi approval ka extension de diya gaya. Please file dobara check karein.",
+    "Meri request hai ki matter expert committee ke saamne rakha jaye. Institute ki faculty aur infrastructure ki compliance report zamini haqiqat se match nahi karti.",
+    "College ko {date} tak deficiency compliance jama karni thi, par portal par kuch upload nahi hua aur committee ne bhi koi decision nahi liya.",
+    "{course} ki inspection report mein building area norms se kam bataya gaya, phir bhi committee ne continuation recommend kiya. Hum is recommendation ka review chahte hain.",
+    "{year} intake ke liye {dept} mein college ke application ka scrutiny {n} mahine se pending hai, aur institute abhi se admission ka vigyapan de raha hai."
+   ],
+   "short": {
+    "en": [
+     "Scrutiny committee review pending.",
+     "Deficiency compliance not submitted.",
+     "Request review of the committee recommendation."
+    ],
+    "hi": [
+     "जांच समिति की समीक्षा लंबित",
+     "कमियों का अनुपालन जमा नहीं हुआ",
+     "समिति की अनुशंसा की समीक्षा हो"
+    ],
+    "hinglish": [
+     "Scrutiny committee ka review pending hai",
+     "Deficiency compliance jama nahi hui",
+     "Committee ki recommendation ka review karein"
+    ]
+   }
+  },
+  "OTHER": {
+   "en": [
+    "Please inform me of the current status of my earlier grievance regarding the college. I have not received any update from AICTE.",
+    "I want to know whether the college has a valid approval for the {year} academic year and the intake sanctioned for {course}.",
+    "The college has not displayed the mandatory disclosure and fee structure on its website. Please look into it.",
+    "I request a copy of the action taken report on my complaint dated {date}, as the college has not shared it with me.",
+    "The college's grievance redressal committee and ombudsperson details are not available on its website. Students do not know where to complain.",
+    "I wish to suggest that AICTE make complaint tracking simpler so that students need not file the same complaint on multiple portals."
+   ],
+   "hi": [
+    "कृपया कॉलेज के बारे में मेरी पुरानी शिकायत की वर्तमान स्थिति बताएं। एआईसीटीई की ओर से मुझे कोई सूचना नहीं मिली है।",
+    "मैं जानना चाहता हूँ कि क्या कॉलेज के पास {year} शैक्षणिक सत्र के लिए वैध मान्यता है और {course} के लिए कितनी सीटें स्वीकृत हैं।",
+    "कॉलेज ने अपनी वेबसाइट पर अनिवार्य प्रकटीकरण और फीस संरचना नहीं दिखाई है। कृपया इसे देखें।",
+    "मेरी {date} की शिकायत पर की गई कार्रवाई रिपोर्ट की प्रति चाहिए, क्योंकि कॉलेज ने मुझे वह नहीं दी।",
+    "कॉलेज की वेबसाइट पर शिकायत निवारण समिति और लोकपाल का विवरण उपलब्ध नहीं है। छात्रों को पता ही नहीं कि शिकायत कहां करें।",
+    "मेरा सुझाव है कि एआईसीटीई शिकायत ट्रैकिंग को सरल बनाए ताकि छात्रों को एक ही शिकायत कई पोर्टलों पर दर्ज न करनी पड़े।"
+   ],
+   "hinglish": [
+    "Please college ke baare mein meri purani shikayat ka current status bataiye. AICTE ki taraf se koi update nahi mila.",
+    "Mujhe jaanna hai ki college ke paas {year} academic year ki valid approval hai ya nahi aur {course} ki kitni seats sanctioned hain.",
+    "College ne website par mandatory disclosure aur fee structure nahi dikhaya hai. Kripya dekhiye.",
+    "Meri {date} ki shikayat par action taken report ki copy chahiye, college ne mujhe share nahi ki.",
+    "College ki website par grievance redressal committee aur ombudsperson ki details nahi hain. Students ko pata hi nahi kahan complaint karein.",
+    "Mera sujhav hai ki AICTE complaint tracking simple kare taaki students ko ek hi shikayat alag alag portals par na daalni pade."
+   ],
+   "short": {
+    "en": [
+     "Status of my earlier complaint please.",
+     "Query about college approval status.",
+     "Request for action taken report."
+    ],
+    "hi": [
+     "मेरी शिकायत की स्थिति बताएं",
+     "कॉलेज की मान्यता की जानकारी चाहिए",
+     "कार्रवाई रिपोर्ट की प्रति चाहिए"
+    ],
+    "hinglish": [
+     "Meri shikayat ka status bataiye",
+     "College ki approval ki jaankari chahiye",
+     "Action taken report ki copy chahiye"
+    ]
+   }
+  }
+ },
+ "notes": "templates[CATEGORY][lang] = list of strings with {slot} placeholders; templates[CATEGORY]['short'][lang] = short variants (<12 words) usable as subject lines. Slot names: date, amount, semester, course, dept, n, intake, year. {ref} appears only in reference_prefixes."
+}

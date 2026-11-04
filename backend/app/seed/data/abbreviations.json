@@ -1,0 +1,173 @@
+{
+  "expansions": {
+    "engg": "engineering",
+    "engr": "engineering",
+    "eng": "engineering",
+    "govt": "government",
+    "gov": "government",
+    "inst": "institute",
+    "instt": "institute",
+    "tech": "technology",
+    "coll": "college",
+    "clg": "college",
+    "collage": "college",
+    "univ": "university",
+    "mgmt": "management",
+    "pharm": "pharmacy",
+    "poly": "polytechnic",
+    "coe": "college of engineering",
+    "iet": "institute of engineering and technology",
+    "sr": "shri",
+    "shree": "shri",
+    "sri": "shri",
+    "st": "saint"
+  },
+  "first_token_only": [
+    "st"
+  ],
+  "stop_tokens": [
+    "the",
+    "of",
+    "and",
+    "for"
+  ],
+  "noise": {
+    "word_abbreviations": {
+      "engineering": [
+        "Engg",
+        "Engg.",
+        "Engr",
+        "Eng"
+      ],
+      "government": [
+        "Govt",
+        "Govt.",
+        "Gov"
+      ],
+      "institute": [
+        "Inst",
+        "Inst.",
+        "Instt"
+      ],
+      "technology": [
+        "Tech",
+        "Tech."
+      ],
+      "college": [
+        "Coll",
+        "Coll.",
+        "Clg"
+      ],
+      "university": [
+        "Univ",
+        "Univ."
+      ],
+      "management": [
+        "Mgmt",
+        "Mgmt."
+      ],
+      "pharmacy": [
+        "Pharm"
+      ],
+      "polytechnic": [
+        "Poly"
+      ]
+    },
+    "misspellings": {
+      "college": [
+        "collage",
+        "colege",
+        "collge",
+        "colledge"
+      ],
+      "engineering": [
+        "enginering",
+        "engineeing",
+        "enginnering",
+        "engeneering"
+      ],
+      "technology": [
+        "tecnology",
+        "technolgy",
+        "tehnology"
+      ],
+      "institute": [
+        "insitute",
+        "institue",
+        "instutute"
+      ],
+      "management": [
+        "managment",
+        "mangement"
+      ],
+      "government": [
+        "goverment",
+        "govrnment",
+        "govermnt"
+      ],
+      "polytechnic": [
+        "politechnic",
+        "polytecnic"
+      ],
+      "pharmacy": [
+        "pharmcy",
+        "farmacy"
+      ],
+      "shri": [
+        "shree",
+        "sri",
+        "sree"
+      ]
+    },
+    "phrase_abbreviations": {
+      "institute of engineering and technology": "IET",
+      "institute of engineering & technology": "IET",
+      "college of engineering": "COE",
+      "institute of technology and management": "ITM",
+      "institute of technology & management": "ITM",
+      "institute of management studies": "IMS",
+      "college of pharmacy": "COP",
+      "institute of computer applications": "ICA"
+    },
+    "initialism_rule": {
+      "description": "SIET-style: take the first letter of each significant word of the official name, skipping prefixes and stop words, upper-case, then optionally append the city. Shrinath Institute of Engineering & Technology, Kanpur -> 'SIET Kanpur'.",
+      "skip_prefixes": [
+        "Shri",
+        "Smt.",
+        "Late",
+        "Dr.",
+        "Government",
+        "Rajkiya",
+        "Sant",
+        "Maharishi"
+      ],
+      "stop_words": [
+        "of",
+        "and",
+        "&",
+        "the",
+        "for"
+      ],
+      "append_city_probability": 0.8,
+      "min_letters": 3
+    },
+    "separators": {
+      "and_variants": [
+        "&",
+        "and",
+        "N"
+      ],
+      "punctuation_drop_probability": 0.3,
+      "lowercase_probability": 0.15
+    },
+    "word_dropout": [
+      "the",
+      "of"
+    ],
+    "partial_name_rules": [
+      "drop the type phrase except the trailing word (Shrinath Engg College)",
+      "drop the city (rate 0.2) or keep city only without district/pincode",
+      "append 'college' / 'institute' generic suffix instead of the full type phrase"
+    ]
+  }
+}
