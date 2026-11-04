@@ -1,0 +1,219 @@
+@import '@fontsource/ibm-plex-sans/400.css';
+@import '@fontsource/ibm-plex-sans/500.css';
+@import '@fontsource/ibm-plex-sans/600.css';
+@import '@fontsource/ibm-plex-mono/400.css';
+@import '@fontsource/ibm-plex-mono/500.css';
+@import '@fontsource/noto-sans-devanagari/400.css';
+@import '@fontsource/noto-sans-devanagari/500.css';
+@import './tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink-900);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+    line-height: 1.25;
+  }
+  a {
+    color: var(--navy);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  button {
+    font-family: inherit;
+  }
+  [lang='hi'] {
+    font-family: 'Noto Sans Devanagari', 'IBM Plex Sans', system-ui, sans-serif;
+  }
+  ::placeholder {
+    color: var(--ink-300);
+  }
+  /* Single focus ring for every interactive element */
+  :focus-visible {
+    outline: none;
+    box-shadow: var(--focus);
+  }
+  ::selection {
+    background: var(--navy-50);
+  }
+}
+
+@layer components {
+  /* Tabular numerals: all numbers in tables, KPIs, clocks */
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+  .mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+  .focus-ring:focus-visible {
+    outline: none;
+    box-shadow: var(--focus);
+  }
+  /* Register-style small section label */
+  .label-caps {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-500);
+  }
+
+  /* Data table: sticky header, 1px row rules, hover navy-50, zebra off */
+  .ls-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 13px;
+  }
+  .ls-table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: var(--paper);
+    color: var(--ink-500);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: left;
+    height: 32px;
+    padding: 0 12px;
+    border-bottom: 1px solid var(--line);
+    white-space: nowrap;
+  }
+  .ls-table tbody td {
+    height: var(--row-h);
+    padding: 0 12px;
+    border-bottom: 1px solid var(--line-soft);
+    vertical-align: middle;
+  }
+  .ls-table.compact tbody td {
+    height: 30px;
+  }
+  .ls-table tbody tr:hover td {
+    background: var(--navy-50);
+  }
+  .ls-table tbody tr[aria-selected='true'] td {
+    background: var(--navy-50);
+  }
+  .ls-table tbody tr.clickable {
+    cursor: pointer;
+  }
+  .ls-table .num {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
+  .ls-table .id {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  /* Motion <= 150 ms, opacity / translate only */
+  @keyframes ls-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes ls-slide-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes ls-rise-in {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Skeleton bar: flat grey, opacity pulse only */
+  @keyframes ls-pulse {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.55;
+    }
+  }
+  .anim-fade {
+    animation: ls-fade-in 120ms ease-out;
+  }
+  .anim-drawer {
+    animation: ls-slide-in-right 140ms ease-out;
+  }
+  .anim-toast {
+    animation: ls-rise-in 120ms ease-out;
+  }
+  .skeleton {
+    background: var(--line-soft);
+    border-radius: var(--radius-sm);
+    animation: ls-pulse 1.4s ease-in-out infinite;
+  }
+  /* Cold start progress line: translate only */
+  @keyframes ls-indeterminate {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(350%);
+    }
+  }
+  .progress-line {
+    position: relative;
+    height: 2px;
+    overflow: hidden;
+    background: var(--line-soft);
+  }
+  .progress-line > span {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 30%;
+    background: var(--navy);
+    animation: ls-indeterminate 1.3s linear infinite;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .anim-fade,
+    .anim-drawer,
+    .anim-toast,
+    .skeleton,
+    .progress-line > span {
+      animation: none;
+    }
+  }
+}

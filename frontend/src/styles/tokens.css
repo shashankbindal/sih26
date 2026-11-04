@@ -1,0 +1,66 @@
+/* Design tokens: the design system section 2. Single source of truth; Tailwind and ECharts read from here. */
+:root {
+  /* Structure */
+  --ink-900: #0b1b33; /* primary text, nav background */
+  --ink-700: #22344f;
+  --ink-500: #4a5b73; /* secondary text */
+  --ink-300: #8a97a8; /* muted, placeholders */
+  --on-dark-muted: #bcc6d3; /* secondary text on ink-900 / navy backgrounds (>= 4.5:1 on both) */
+  --line: #d9dee5; /* borders, table rules */
+  --line-soft: #e9ecf0;
+  --paper: #f6f7f9; /* app background */
+  --surface: #ffffff; /* panels, tables */
+  --navy: #12325e; /* primary actions, links, selected nav */
+  --navy-50: #eaf0f8; /* selected row, focus wash */
+
+  /* Status: always paired with text */
+  --ok: #1e6b3a;
+  --ok-bg: #e8f3ec;
+  --amber: #9a5b00;
+  --amber-bg: #fff4e0; /* "Coordination required", AMBER clock */
+  --red: #a4262c;
+  --red-bg: #fbeaea; /* "Priority review", BREACHED */
+  --info: #1f5f8b;
+  --info-bg: #e8f1f8; /* "Review suggested" */
+  --neutral: #4a5b73;
+  --neutral-bg: #eef1f4;
+
+  /* The accent: saffron, used ONLY for coordination / overlap UI */
+  --saffron: #d9822b;
+  --saffron-bg: #fdf1e4;
+
+  --radius-sm: 3px;
+  --radius: 4px;
+  --radius-lg: 6px;
+  --focus: 0 0 0 2px #ffffff, 0 0 0 4px #12325e;
+  --shadow-menu: 0 4px 12px rgba(11, 27, 51, 0.14); /* menus and drawers only */
+
+  /* Bureau colours: fixed everywhere. Saffron is never a bureau colour. */
+  --bureau-pgrc: #12325e;
+  --bureau-rb: #3c7ab5;
+  --bureau-approval: #7fa8cf;
+  --bureau-vigilance: #4a5b73;
+  --bureau-ro: #1e6b3a;
+  --bureau-admin: #8a97a8;
+
+  /* Chart palette, in order */
+  --chart-1: #12325e;
+  --chart-2: #3c7ab5;
+  --chart-3: #7fa8cf;
+  --chart-4: #d9822b;
+  --chart-5: #1e6b3a;
+  --chart-6: #8a97a8;
+  --chart-7: #a4262c;
+
+  /* Type */
+  --font-sans: 'IBM Plex Sans', 'Noto Sans Devanagari', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, Consolas, monospace;
+
+  /* Layout */
+  --nav-w: 232px;
+  --topbar-h: 52px;
+  --envbar-h: 24px;
+  --row-h: 36px;
+  --ctl-h: 32px;
+  --motion: 120ms;
+}
