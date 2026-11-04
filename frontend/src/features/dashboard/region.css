@@ -1,0 +1,11 @@
+/* Region map: Esri light-gray canvas is already low-detail and unsaturated, so the bubbles carry the colour. */
+.ls-map-tiles {
+  filter: grayscale(1);
+}
+.leaflet-container {
+  font-family: var(--font-sans);
+  font-size: 12px;
+}
+.leaflet-control-attribution {
+  font-size: 11px;
+}
