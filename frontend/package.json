@@ -1,0 +1,50 @@
+{
+  "name": "lok-sutra-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5173 --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --port 4173",
+    "typecheck": "tsc -b --noEmit",
+    "lint": "eslint .",
+    "gen:api": "node scripts/gen-api.mjs",
+    "e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@playwright/test": "^1.64.1",
+    "@types/leaflet": "^1.9.22",
+    "@types/node": "^22.20.5",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.6.2",
+    "axe-core": "^4.10.2",
+    "eslint": "^9.39.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.13.0",
+    "openapi-typescript": "^7.13.0",
+    "playwright": "^1.64.1",
+    "postcss": "^8.5.32",
+    "tailwindcss": "3.4",
+    "typescript": "5.6",
+    "typescript-eslint": "^8.72.1",
+    "vite": "^5.4.21"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "@fontsource/noto-sans-devanagari": "^5.3.0",
+    "@tanstack/react-query": "^5.104.5",
+    "echarts": "^6.1.0",
+    "echarts-for-react": "^3.0.6",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^1.66.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-leaflet": "^4.2.1",
+    "react-router-dom": "^6.30.6"
+  }
+}
